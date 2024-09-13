@@ -1,0 +1,12 @@
+dogs-color: #f85c62
+cats-color: #c79e78
+birds-color: #f88818
+fish-color: #3f9ce0
+reptile-color: #39b173
+
+top-nav-color: #003964
+bottom-nav-color: #004980
+schedule-button-color: #074980
+
+hero-text: #013465
+hero-paragraph: #23495b
