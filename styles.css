@@ -31,16 +31,23 @@ header {
 }
 
 .header-top {
-    
+
     text-align: center;
     padding: 10px;
 }
 
+.logo {
+    width: 70px; /* Adjust the width as needed */
+    height: 60px;
+    margin-right: 50px;
+   
+}
+
 .logo-search {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .nav-links {
@@ -69,19 +76,19 @@ header {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     align-items: center;
     padding: 50px;
     margin: 0;
-    height: 400px; 
+    height: 400px;
     color: white;
 }
 
 .hero-text {
-    
+
     padding: 20px;
     max-width: 400px;
-    text-align: left; 
+    text-align: left;
 }
 
 .cta-btn {
@@ -98,14 +105,19 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 30px 20px;
+    gap: 20px;
 }
 
 .category {
     text-align: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .category img {
     max-width: 150px;
+
+
 }
 
 .category button {
@@ -116,12 +128,35 @@ header {
     border: none;
 }
 
+/* Category BG-Images */
+.category.dogs {
+    background-image: url('assets/photos/dogs.jpg');
+
+}
+
+.category.cats {
+    background-image: url('assets/photos/cats.jpg');
+}
+
+.category.birds {
+    background-image: url('assets/photos/birds.jpg');
+}
+
+.category.fish {
+    background-image: url('assets/photos/fish.jpg');
+}
+
+.category.reptiles {
+    background-image: url('assets/photos/reptiles.jpg');
+}
+
+
 /* About Doggo Section */
 .about-doggo {
     background-image: url('assets/photos/doggo-photo.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left center; 
+    background-position: left center;
     background-color: #06457a;
     padding: 50px;
     color: white;
@@ -134,7 +169,7 @@ header {
 }
 
 .about-doggo h2, .about-doggo p {
-    max-width: 300px; 
+    max-width: 300px;
 }
 
 .about-doggo h2 {
@@ -194,4 +229,15 @@ header {
     margin: auto;
 }
 
-/*
+/* Responsive Design: Stacking on Smaller Screens */
+@media (max-width: 768px) {
+    .categories {
+        flex-direction: column; /* Stacks categories vertically */
+        align-items: center; /* Centers categories */
+    }
+
+    .category {
+        width: 80%; /* Makes categories take up 80% of the container's width */
+        height: 150px; /* Adjusts height for smaller screens */
+    }
+}
