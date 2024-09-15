@@ -10,3 +10,5 @@ schedule-button-color: #074980
 
 hero-text: #013465
 hero-paragraph: #23495b
+testimonial-border: #fab77b
+testimonial-background: #eff3f7
