@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* Global Styles */
 :root {
 	--primary-color: #fcf5e9;
@@ -599,6 +606,109 @@ header {
         display: block;
     }
 
+    .testimonials {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .testimonial {
+        display: block;
+        background-color: #eff3f7;
+        border: 2px solid #fab77b;
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+        min-height: 350px;
+    }
+
+    .testimonial img {
+        height: 120px;
+        max-width: 100%;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .testimonial blockquote {
+        margin-bottom: 10px;
+    }
+
+    .testimonial p {
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column; 
+        padding: 0;
+        max-width: 100%; 
+    }
+
+    .contact-info,
+    .social,
+    .contact-form {
+        width: 80%; 
+        margin-bottom: 20px;
+        text-align: center; 
+        margin-right: 0;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 20px;
+    }
+    
+    .social ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .social ul li {
+        margin-bottom: 10px; 
+    }
+    
+    .social ul li:last-child {
+        margin-bottom: 0; 
+    }
+    
+    .social ul li a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1rem; 
+        display: flex;
+        align-items: center;
+    }
+    
+    
+
+    
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        margin-bottom: 15px; 
+    }
+
+    .contact-form button {
+        margin-top: 10px; 
+    }
+    
+    footer {
+        width: 100vw; /* Full viewport width */
+        margin: 0; /* Remove any margin */
+        padding: 20px; /* Adjust padding as needed */
+    }
 
 
 
